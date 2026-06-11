@@ -234,8 +234,14 @@ body::before {
 ================================================== */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(2, minmax(450px, 1fr));
+    gap: 28px;
+}
+
+.twitch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(450px, 1fr));
+    gap: 28px;
 }
 
 .setup-card {
@@ -359,6 +365,7 @@ body::before {
     .setup-subtitle { font-size: 13px; padding: 0 12px; }
     .setup-group { width: 92%; padding: 16px; border-radius: 16px; }
     .cards-grid { grid-template-columns: 1fr; gap: 14px; }
+    .twitch-grid {grid-template-columns: 1fr;}
     .setup-card { border-radius: 14px; }
     .video-wrapper { border-radius: 14px; }
     .card-info h3 { font-size: 16px; }
